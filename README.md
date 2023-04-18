@@ -1,4 +1,4 @@
-# `bnirs_pipeline`
+# `mms-data-pipeline`
 
 ## Set Up
 
