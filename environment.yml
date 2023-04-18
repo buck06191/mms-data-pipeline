@@ -1,0 +1,10 @@
+name: pipeline
+
+channels:
+  - conda-forge
+  - default
+
+prefix: /opt/homebrew/Caskroom/miniforge/base/envs/pipeline
+
+dependencies:
+  - python=3.11

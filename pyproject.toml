@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pipeline"
+version = "0.1.0"
+description = "A data pipeline for the multimodal spectroscopy group"
+authors = ["Josh Buckland <josh.russell.buckland@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+snirf = "^0.7.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pytest = "^7.2.2"
+pyright = "^1.1.301"
+pytest-mock = "^3.10.0"
+pytest-describe = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["--import-mode=importlib"]
+pythonpath = "src"
+testpaths = [
+  "tests", # You should have a "tests" directory
+]
